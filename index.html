@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal To-Do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Task Manager</h1>
+    <div id="main-div">
+        <h2>Add Task </h2>
+        <button id="addtask" onclick="openModal()">➕</button>
+        <h2 id="h2">No Tasks!</h2>
+    </div>
+
+    <div id="modal" class="hidden">
+        <span>
+            <p>Enter the task: </p>
+            <input type="text" placeholder="Enter task.." id="taskInput">
+        </span>
+        <br>
+        <span>
+            <p>Enter the time: </p>
+            <input type="time" id="timeInput">
+        </span>
+        <br>
+        <span>
+            <p>Enter the date</p>
+            <input type="date" id="dateInput">
+        </span>
+        <br>
+        <button id="add-btn" onclick="addTask()">Save</button>
+    </div>
+    <div id="overlay"  class="hidden"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

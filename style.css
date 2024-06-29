@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); 
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(50, 52, 55);
+    color: rgb(209,208,197);
+    line-height: 1.5;
+}
+
+h3
+{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#main-div
+{
+    border: 1px solid rgb(207, 170, 0);
+    border-radius: 50px;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+}
+
+#addtask
+{
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(50, 52, 55);
+    border: 1px solid rgb(209,208,197);
+    border-radius: 100px;
+    transition: background-color 0.1s;
+    outline: none;
+}
+
+#addtask:hover
+{
+    background-color: rgb(209,208,197);
+}
+
+#addtask:active
+{
+    background-color: rgb(50, 52, 55);
+}
+
+#add-btn
+{
+    position: absolute;
+    background-color: rgb(207, 170, 0);
+    color: rgb(50, 52, 55);
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 50px;
+    transition: background-color 0.2s, color 0.2s;
+    margin-left: 200px;
+}
+
+#add-btn:hover
+{
+    background-color: rgb(50, 52, 55);
+    color:rgb(207, 170, 0);
+
+}
+
+.hidden
+{
+    display: none;
+}
+
+#modal 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
+    color: white;
+    background-color: rgb(50, 52, 55);
+    padding: 6rem;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 20;    
+    border: 1px solid rgb(207, 170, 0);
+    border-radius: 30px;
+}
+
+#overlay 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(100px);
+    z-index: 5;
+}
