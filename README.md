@@ -24,8 +24,8 @@ This project is a web-based task manager that allows users to add, delete, and m
 
 ## Technologies Used
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
 
 ## Setup
